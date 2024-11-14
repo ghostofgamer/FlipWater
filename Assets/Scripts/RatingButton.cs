@@ -16,8 +16,7 @@ public class RatingButton : MonoBehaviour,IPointerClickHandler
 
     public static void OpenUrl()
     {
-        Application.OpenURL(Application.platform == RuntimePlatform.Android ? $"market://details?id={Application.identifier}" :
-            $"http://itunes.apple.com/app/id{GameSettings.Default.IosAppId}");
+        Application.OpenURL("http://www.maxfabrique.com/");
         Rated = true;
     }
 }
