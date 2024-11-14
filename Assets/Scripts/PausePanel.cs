@@ -14,7 +14,7 @@ public class PausePanel : ShowHidable
     private void Awake()
     {
 #if IN_APP
-        _removeAdsBtn.gameObject.SetActive(ResourceManager.EnableAds);
+        // _removeAdsBtn.gameObject.SetActive(ResourceManager.EnableAds);
 #else
         _removeAdsBtn.gameObject.SetActive(false);
 #endif

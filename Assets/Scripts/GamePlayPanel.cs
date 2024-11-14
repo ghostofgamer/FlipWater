@@ -15,7 +15,7 @@ public class GamePlayPanel : ShowHidable
     private void Start()
     {
         API.ShowBanner(BannerPosition.Bottom, BannerType.Adaptive);
-        _lvlTxt.text = $" LEVEL\n {LevelManager.Instance.Level.no}";
+        _lvlTxt.text = $" LEVEL {LevelManager.Instance.Level.no}";
 
         if(LevelManager.Instance.Level.no == 1)
         {
