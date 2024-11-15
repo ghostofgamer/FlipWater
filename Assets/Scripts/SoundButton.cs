@@ -27,11 +27,13 @@ public class SoundButton:MonoBehaviour,IPointerClickHandler
     private void AudioManagerOnSoundStateChanged(bool b)
     {
         _button.image.sprite = _soundEnableAndDisableSprites[b ? 0 : 1];
+        AudioListener.volume = b ? 1 : 0;
     }
 
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("Изменили звук");
         AudioManager.IsSoundEnable = !AudioManager.IsSoundEnable;
     }
 }

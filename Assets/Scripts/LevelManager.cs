@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private float _minXDistanceBetweenHolders;
     [SerializeField] private Camera _camera;
     [SerializeField] private Holder _holderPrefab;
+    [SerializeField] private Wallet _wallet;
 
     [SerializeField] private AudioClip _winClip;
 
@@ -173,6 +174,8 @@ public class LevelManager : MonoBehaviour
 
         PlayClipIfCan(_winClip);
         CurrentState = State.Over;
+
+_wallet.AddCoin();
 
         ResourceManager.CompleteLevel(GameMode, Level.no);
         LevelCompleted?.Invoke();

@@ -37,7 +37,7 @@ public class Liquid : MonoBehaviour
             Value = Value;
         }
     }
-
+    
     public float Value
     {
         set
@@ -50,11 +50,17 @@ public class Liquid : MonoBehaviour
                 _renderer.transform.localPosition = _renderer.transform.localPosition.WithY(_bottomRendererSize);
                 _renderer.transform.localScale =
                     _renderer.transform.localScale.WithY(_unitSize * value - _bottomRendererSize);
+                
+                
+                /*_renderer.transform.localPosition = _renderer.transform.localPosition.WithY(0.16f);
+                _renderer.transform.localScale =
+                    _renderer.transform.localScale.WithY(_unitSize * value - _bottomRendererSize);*/
             }
             else
             {
                 _bottomRenderer.gameObject.SetActive(false);
                 _renderer.transform.localPosition = Vector3.zero;
+                // _renderer.transform.localPosition = new Vector3(0,0.3f,0);
                 _renderer.transform.localScale = _renderer.transform.localScale.WithY(_unitSize * value );
             }
 

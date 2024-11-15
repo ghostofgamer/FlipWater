@@ -47,3 +47,18 @@ TagManager:
   - name: Front
     uniqueID: 3296384223
     locked: 0
+  - name: Bottle1
+    uniqueID: 2837401401
+    locked: 0
+  - name: Bottle2
+    uniqueID: 1153115941
+    locked: 0
+  - name: Bottle3
+    uniqueID: 2095489295
+    locked: 0
+  - name: Bottle4
+    uniqueID: 65950995
+    locked: 0
+  - name: Bottle5
+    uniqueID: 3390812521
+    locked: 0
