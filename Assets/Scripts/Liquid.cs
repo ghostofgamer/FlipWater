@@ -9,10 +9,13 @@ public class Liquid : MonoBehaviour
     [SerializeField] private float _bottomRendererSize;
     [SerializeField] private float _unitSize;
     [SerializeField] private Color[] _groupColors = new Color[0];
-
+    [SerializeField] private Transform _topPosition;
+    
     private float _value;
 
     private bool _isBottomLiquid;
+    public Transform TopPosition => _topPosition;
+    
     // [SerializeField] private bool _useSprites = true;
 
     public int GroupId
